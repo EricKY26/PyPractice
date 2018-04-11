@@ -10,5 +10,3 @@ elif score >= 60:
     print("Your grade is D.")
 else:
     print("Sorry, you got F. You should try harder.")
-
-#test 2
