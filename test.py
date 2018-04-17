@@ -1,3 +1,6 @@
+#!usr/bin/env python3
+# -*- coding:utf-8 -*-
+
 name = input('Who are you?\n')
 age = input('And how old are you?\n')
 
@@ -51,3 +54,18 @@ ord('a')
 chr(66)
 chr(26472)
 '\u6768'
+'EricKY26'.encode('ascii')
+'凌尘飞雪'.encode('utf-8')
+'EKY凌尘飞雪'.encode('utf-8')
+b'EKY\xe5\x87\x8c\xe5\xb0\x98\xe9\xa3\x9e\xe9\x9b\xaa'.decode('utf-8')
+
+len('EricKY26')
+len('凌尘飞雪')
+
+len(b'EKY')
+len(b'EKY\xe5\x87\x8c\xe5\xb0\x98\xe9\xa3\x9e\xe9\x9b\xaa')
+len('EKY凌尘飞雪'.encode('utf-8'))
+len('EKY'.encode('utf-8'))
+
+print('%3d-%02d' % (000, 14))
+print('%.2f' % 3.1415926)
