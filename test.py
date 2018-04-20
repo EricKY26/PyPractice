@@ -96,14 +96,31 @@ team_members.append('Darcey')
 team_members.insert(2, 'Nancy')
 team_members[2] = 'Leo'
 
-list1 = ['name', 86, ['A',95],True]
+list1 = ['name', 86, ['A', 95], True]
 list1[0]
 list1[1]
 list1[2]
 list1[3]
 list1[2][1]
 list1[2][0]
-list_in=['B',86]
-list1[1]=list_in
+list_in = ['B', 86]
+list1[1] = list_in
 
-team_member_t=('Destiny','Eric','Kathy')
+team_member_t = ('Destiny', 'Eric', 'Kathy')
+tuple0 = ()
+tuple1 = (1,)
+tuple_l = ('A', 2, ['L1', 'L2', True])
+tuple_l[2][-1] = False
+
+# exercise for list
+L = [
+    ['Apple', 'Google', 'Microsoft'],
+    ['Java', 'Python', 'Ruby', 'PHP'],
+    ['Adam', 'Bart', 'Lisa']
+]
+# 打印Apple:
+print('L[0][0] is '+L[0][0])
+# 打印Python:
+print('L[1][1] is '+L[1][1])
+# 打印Lisa:
+print('L[2][2] is '+L[2][2])
