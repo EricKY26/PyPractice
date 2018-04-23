@@ -1,8 +1,35 @@
 #!usr/bin/env python3
 # -*- coding:utf-8 -*-
 
-# name = input('Who are you?\n')
-# age = input('And how old are you?\n')
+name = input('What\'s your name?\n')
+age_s = input('And how old are you?\n')
+height_s = input('Please tell me your height. (In meters)\n')
+weight_s = input('And now please tell me your weight. (In Kilograms)\n')
+
+age = int(age_s)
+height = float(height_s)
+weight = float(weight_s)
+BMI = weight/height**2
+if BMI<18.5:
+    tip_BMI='too thin'
+elif BMI>=18.5 and BMI<25:
+    tip_BMI='normal'
+elif BMI>=25 and BMI<28:
+    tip_BMI='a little over-weight'
+elif BMI>=28 and BMI<32:
+    tip_BMI='fat'
+else:
+    tip_BMI='too fat'
+
+if age >= 18:
+    print('\nHello %s. You are an adult. \nAnd your BMI is %.2f. You are %s. \n' % (name, BMI, tip_BMI))
+elif age >= 7:
+    print('\nHello %s. You are a teenager. \nAnd your BMI is %.2f. You are %s. \n' % (name, BMI, tip_BMI))
+else:
+    print('\nHello %s. You are a child. \nAnd your BMI is %.2f. You are %s. \n' % (name, BMI, tip_BMI))
+
+# if 'adult':
+#     print('True')
 
 # print(name, age)
 
@@ -37,10 +64,6 @@
 # 5>3 or 3>5
 # not 1>2
 
-# if int(age) >= 18:
-#     print('You are an adult. ')
-# else:
-#     print('You are a children. ')
 
 # a='ABC'
 # b=a
@@ -80,47 +103,47 @@
 # print('%s的成绩提高了%.1f%%' % (name_cn, rate))
 # print('{0}的成绩提高了{1:.1f}%'.format(name_cn, rate))
 
-team_members = ['Destiny', 'Eric', 'Kathy']
+# team_members = ['Destiny', 'Eric', 'Kathy']
 
-team_members
-len(team_members)
-team_members[-3]
-team_members[-2]
-team_members[-1]
-team_members[0]
-team_members[1]
-team_members[2]
+# team_members
+# len(team_members)
+# team_members[-3]
+# team_members[-2]
+# team_members[-1]
+# team_members[0]
+# team_members[1]
+# team_members[2]
 
-team_members.count('Eric')
-team_members.append('Darcey')
-team_members.insert(2, 'Nancy')
-team_members[2] = 'Leo'
+# team_members.count('Eric')
+# team_members.append('Darcey')
+# team_members.insert(2, 'Nancy')
+# team_members[2] = 'Leo'
 
-list1 = ['name', 86, ['A', 95], True]
-list1[0]
-list1[1]
-list1[2]
-list1[3]
-list1[2][1]
-list1[2][0]
-list_in = ['B', 86]
-list1[1] = list_in
+# list1 = ['name', 86, ['A', 95], True]
+# list1[0]
+# list1[1]
+# list1[2]
+# list1[3]
+# list1[2][1]
+# list1[2][0]
+# list_in = ['B', 86]
+# list1[1] = list_in
 
-team_member_t = ('Destiny', 'Eric', 'Kathy')
-tuple0 = ()
-tuple1 = (1,)
-tuple_l = ('A', 2, ['L1', 'L2', True])
-tuple_l[2][-1] = False
+# team_member_t = ('Destiny', 'Eric', 'Kathy')
+# tuple0 = ()
+# tuple1 = (1,)
+# tuple_l = ('A', 2, ['L1', 'L2', True])
+# tuple_l[2][-1] = False
 
-# exercise for list
-L = [
-    ['Apple', 'Google', 'Microsoft'],
-    ['Java', 'Python', 'Ruby', 'PHP'],
-    ['Adam', 'Bart', 'Lisa']
-]
-# 打印Apple:
-print('L[0][0] is '+L[0][0])
-# 打印Python:
-print('L[1][1] is '+L[1][1])
-# 打印Lisa:
-print('L[2][2] is '+L[2][2])
+# # exercise for list
+# L = [
+#     ['Apple', 'Google', 'Microsoft'],
+#     ['Java', 'Python', 'Ruby', 'PHP'],
+#     ['Adam', 'Bart', 'Lisa']
+# ]
+# # 打印Apple:
+# print('L[0][0] is '+L[0][0])
+# # 打印Python:
+# print('L[1][1] is '+L[1][1])
+# # 打印Lisa:
+# print('L[2][2] is '+L[2][2])
