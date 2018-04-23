@@ -1,32 +1,32 @@
 #!usr/bin/env python3
 # -*- coding:utf-8 -*-
 
-name = input('What\'s your name?\n')
-age_s = input('And how old are you?\n')
-height_s = input('Please tell me your height. (In meters)\n')
-weight_s = input('And now please tell me your weight. (In Kilograms)\n')
+# name = input('What\'s your name?\n')
+# age_s = input('And how old are you?\n')
+# height_s = input('Please tell me your height. (In meters)\n')
+# weight_s = input('And now please tell me your weight. (In Kilograms)\n')
 
-age = int(age_s)
-height = float(height_s)
-weight = float(weight_s)
-BMI = weight/height**2
-if BMI<18.5:
-    tip_BMI='too thin'
-elif BMI>=18.5 and BMI<25:
-    tip_BMI='normal'
-elif BMI>=25 and BMI<28:
-    tip_BMI='a little over-weight'
-elif BMI>=28 and BMI<32:
-    tip_BMI='fat'
-else:
-    tip_BMI='too fat'
+# age = int(age_s)
+# height = float(height_s)
+# weight = float(weight_s)
+# BMI = weight/height**2
+# if BMI<18.5:
+#     tip_BMI='too thin'
+# elif BMI>=18.5 and BMI<25:
+#     tip_BMI='normal'
+# elif BMI>=25 and BMI<28:
+#     tip_BMI='a little over-weight'
+# elif BMI>=28 and BMI<32:
+#     tip_BMI='fat'
+# else:
+#     tip_BMI='too fat'
 
-if age >= 18:
-    print('\nHello %s. You are an adult. \nAnd your BMI is %.2f. You are %s. \n' % (name, BMI, tip_BMI))
-elif age >= 7:
-    print('\nHello %s. You are a teenager. \nAnd your BMI is %.2f. You are %s. \n' % (name, BMI, tip_BMI))
-else:
-    print('\nHello %s. You are a child. \nAnd your BMI is %.2f. You are %s. \n' % (name, BMI, tip_BMI))
+# if age >= 18:
+#     print('\nHello %s. You are an adult. \nAnd your BMI is %.2f. You are %s. \n' % (name, BMI, tip_BMI))
+# elif age >= 7:
+#     print('\nHello %s. You are a teenager. \nAnd your BMI is %.2f. You are %s. \n' % (name, BMI, tip_BMI))
+# else:
+#     print('\nHello %s. You are a child. \nAnd your BMI is %.2f. You are %s. \n' % (name, BMI, tip_BMI))
 
 # if 'adult':
 #     print('True')
@@ -147,3 +147,44 @@ else:
 # print('L[1][1] is '+L[1][1])
 # # 打印Lisa:
 # print('L[2][2] is '+L[2][2])
+
+# mates = ['Colrn', 'Kael', 'Nove']
+
+# for name in mates:
+#     print('Hello, '+name+'!')
+
+# sum = 0
+
+# for x in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]:
+#     sum = sum+x
+#     print(sum)
+
+# list_num10 = list(range(1, 101))
+
+# for a in list_num10:
+#     sum = sum+a
+# print(sum)
+
+# sum=0
+# n=99
+
+# while n>0:
+#     sum=sum+n
+#     n=n-2
+# print('sum =',sum)
+
+# n = 1
+# while n <= 100:
+#     print(n)
+#     n = n+1
+#     if n>10:
+#         break
+# print('END')
+
+n = 0
+
+while n < 10:
+    n = n+1
+    if n % 2 == 0:  # 如果n是偶数，执行continue语句
+        continue  # continue语句会直接继续下一轮循环，后续的print(n)不会执行
+    print(n)
