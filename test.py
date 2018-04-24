@@ -1,43 +1,16 @@
 #!usr/bin/env python3
 # -*- coding:utf-8 -*-
 
-name = input('What\'s your name?\n')
-age_s = input('And how old are you?\n')
-height_s = input('Please tell me your height. (In meters)\n')
-weight_s = input('And now please tell me your weight. (In Kilograms)\n')
+# name = input('What\'s your name?\n')
+# age_s = input('And how old are you?\n')
+# height_s = input('Please tell me your height. (In meters)\n')
+# weight_s = input('And now please tell me your weight. (In Kilograms)\n')
 
-age = int(age_s)
-height = float(height_s)
-weight = float(weight_s)
+# age = int(age_s)
+# height = float(height_s)
+# weight = float(weight_s)
 
-choice = int(input(r'''Please choose what you wanna do next: 
-1. Calculate your BMI. 
-2. Exit
-'''))
 
-while choice==1:
-    BMI = weight/height**2
-    if BMI<18.5:
-        tip_BMI='too thin'
-    elif BMI>=18.5 and BMI<25:
-        tip_BMI='normal'
-    elif BMI>=25 and BMI<28:
-        tip_BMI='a little over-weight'
-    elif BMI>=28 and BMI<32:
-        tip_BMI='fat'
-    else:
-        tip_BMI='too fat'
-
-    if age >= 18:
-        print('\nHello %s. You are an adult. \nAnd your BMI is %.2f. You are %s. \n' % (name, BMI, tip_BMI))
-    elif age >= 7:
-        print('\nHello %s. You are a teenager. \nAnd your BMI is %.2f. You are %s. \n' % (name, BMI, tip_BMI))
-    else:
-        print('\nHello %s. You are a child. \nAnd your BMI is %.2f. You are %s. \n' % (name, BMI, tip_BMI))
-    choice = int(input(r'''Please choose what you wanna do next: 
-    1. Calculate your BMI. 
-    2. Exit
-    '''))
 # if 'adult':
 #     print('True')
 
@@ -191,11 +164,34 @@ while choice==1:
 #         break
 # print('END')
 
-n = 0
+# n = 0
 
-while n < 10:
-    n = n+1
-    if n % 2 == 0:  # 如果n是偶数，执行continue语句
-        continue  # continue语句会直接继续下一轮循环，后续的print(n)不会执行
-    print(n)
+# while n < 10:
+#     n = n+1
+#     if n % 2 == 0:  # 如果n是偶数，执行continue语句
+#         continue  # continue语句会直接继续下一轮循环，后续的print(n)不会执行
+#     print(n)
 
+dict1 = {'Colrn': 83, 'Kael': 85, 'Eric': 80, 'Jason': 69}
+dict1['Colrn']
+dict1['Eric'] = 81
+'Pyra' in dict1
+dict1.get('Kael')
+dict1.get('Yonda', -1)
+dict1.pop('Jason')
+
+tuple1 = (1, 2, 3)
+tuple2 = (1, [2, 3])
+list_dict = [7, 8, 9]
+dict1[list_dict] = 88  # dict不能添加可变对象
+# dict2={tuple1:'A',tuple2:'B'}  # dict不能添加可变对象
+dict2 = {tuple1: 'A', 'next': 'B'}
+
+set1 = set([4, 5, 6])
+set2 = set([3, 4, 5])
+
+list_set1 = [7, 8, 9]
+# set2.add(list_set1)  # set不能添加可变对象
+
+a = 'abc'
+b = a.replace('a', 'A')
