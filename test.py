@@ -79,9 +79,9 @@
 
 # name_cn = input('请输入姓名： \n')
 # score_last = int(input('请输入该学生去年的成绩： \n'))
-# scpore_this = int(input('请输入该学生今年的成绩： \n'))
+# score_this = int(input('请输入该学生今年的成绩： \n'))
 
-# rate = (scpore_this-score_last)/score_last*100
+# rate = (score_this-score_last)/score_last*100
 
 # print('%s的成绩提高了%.1f%%' % (name_cn, rate))
 # print('{0}的成绩提高了{1:.1f}%'.format(name_cn, rate))
