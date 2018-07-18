@@ -183,7 +183,8 @@ dict1.pop('Jason')
 tuple1 = (1, 2, 3)
 tuple2 = (1, [2, 3])
 list_dict = [7, 8, 9]
-dict1[list_dict] = 88  # dict不能添加可变对象
+dict1[list_dict] = 88  # dict不能添加可变对象, dict的key必须是不可变对象
+#这是因为dict根据key来计算value的存储位置，如果每次计算相同的key得出的结果不同，那dict内部就完全混乱了。这个通过key计算位置的算法称为哈希算法（Hash）。
 # dict2={tuple1:'A',tuple2:'B'}  # dict不能添加可变对象
 dict2 = {tuple1: 'A', 'next': 'B'}
 
